@@ -42,6 +42,9 @@ print("l2", l2)
 l2 = ["Egg", 4] + l1
 print("l2", l2)
 
+l2.append(5)
+print("l2append", l2)
+
 # Multidimensional list
 l3 = [[1, 2], [3, 4]]
 print("[1, 1]", l3[1][1])
@@ -57,3 +60,21 @@ print("Max ", max([1, 2, 3]))
 print("1st 2", l1[0:2])
 print("Every Other ", l1[0:-1:2])
 print("Reverse ", l1[::-1])
+print("All onwards", l1[2:])
+
+# count the number of items in a list
+l2.append("Egg")
+print("num of Egg", l2.count("Egg"))
+
+#sorting a list of one data type
+l3 = [3, 10, 11, 4, 16, 8]
+l4 = ["Maryam", "Naghme", "Sina", "Mohammad", \
+      "Hajir", "Reza", "Farnaz","Amir","Armina"]
+l3.sort()
+l4.sort()
+print("sorted l3", l3)
+print("sorted l4", l4)
+
+l5 = l4.copy()
+print("l5 is", l5)
+

@@ -18,6 +18,12 @@ print("Length", len(heroes))
 # Also heroes.get("Superman")
 print(heroes["Superman"])
 
+# use get to retrieve value of a key
+print(heroes.get("Superman"))
+
+# change the default of a key does not exist
+print(heroes.get("Goodman", "not a key"))  # -> returns "not a key" instead of "None"
+
 # Add more
 heroes["Flash"] = "Barry Allan"
 
