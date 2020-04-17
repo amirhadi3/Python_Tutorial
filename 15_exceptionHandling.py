@@ -15,8 +15,13 @@ while True:
     # an error message to set things right
     # We can either target a specific error
     # like ValueError
-    except ValueError:
-        print("You didn't enter a number")
+    #except ValueError:
+    #    print("You didn't enter a number")
+
+    #or
+    except ValueError as err:
+        print(err)
+
 
     # We can target all other errors with a
     # default
